@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "25bdcd40-7a9e-4b6c-a43d-137d8e217b45",
+		"name": "Cloud Ej Propuesto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34150216"
+	},
+	"item": [
+		{
+			"name": "PostProd",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "a2de0369-bf20-4cdf-8fc9-ff2d9865fcb1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tenant_id\" : \"PLAZA_VEA\",\r\n    \"producto_id\" : \"DET003\",\r\n    \"nombre\" : \"Detergente Ariel 10 Kg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://5h3n9ik7w8.execute-api.us-east-1.amazonaws.com/prod/productos/crear",
+					"protocol": "https",
+					"host": [
+						"5h3n9ik7w8",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"productos",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "a2de0369-bf20-4cdf-8fc9-ff2d9865fcb1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tenant_id\": \"PLAZA_VEA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://5h3n9ik7w8.execute-api.us-east-1.amazonaws.com/prod/productos/listar",
+					"protocol": "https",
+					"host": [
+						"5h3n9ik7w8",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"productos",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "a2de0369-bf20-4cdf-8fc9-ff2d9865fcb1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tenant_id\": \"PLAZA_VEA\",\r\n    \"producto_id\": \"DET001\",\r\n    \"nombre\": \"Detergente Sapolio 5 Kg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://5h3n9ik7w8.execute-api.us-east-1.amazonaws.com/prod/productos/modificar",
+					"protocol": "https",
+					"host": [
+						"5h3n9ik7w8",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"productos",
+						"modificar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "a2de0369-bf20-4cdf-8fc9-ff2d9865fcb1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tenant_id\" : \"PLAZA_VEA\",\r\n    \"producto_id\" : \"DET002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://5h3n9ik7w8.execute-api.us-east-1.amazonaws.com/prod/productos/buscar",
+					"protocol": "https",
+					"host": [
+						"5h3n9ik7w8",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"productos",
+						"buscar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Prod",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "a2de0369-bf20-4cdf-8fc9-ff2d9865fcb1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tenant_id\" : \"PLAZA_VEA\",\r\n    \"producto_id\" : \"DET003\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://5h3n9ik7w8.execute-api.us-east-1.amazonaws.com/prod/productos/eliminar",
+					"protocol": "https",
+					"host": [
+						"5h3n9ik7w8",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"productos",
+						"eliminar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
